@@ -1,5 +1,77 @@
-{% extends "homepage/layout.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block body %}
-        <h1>Kenya Nature website</h1>
- {% endblock %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kenya Nature{% endblock %}</title>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{% static 'homepage/styles.css' %}" media="screen" type="text/css" />
+
+    <!-- JS for Patterns -->
+    <script src="{% static 'homepage/filess.js' %}" defer></script>
+
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context" : "https://schema.org",
+      "@type" : "WebSite",
+      "name" : "Kenya Nature",
+      "url" : "https://www.kenyanature.org"
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+</head>
+
+<body>
+    <header class="knat-online-header">
+        <nav>
+            <a href="{% url 'homepage:nature' %}" target="_blank">Nature</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="{% url 'homepage:energy' %}" target="_blank">Energy</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="{% url 'homepage:about' %}" target="_blank">About</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="page">
+            <section class="page-section knat-online-banner">
+                <div class="dark-blue-bkg">
+                    <div class="container main-knat-message-container">
+                        <div class="row">
+                            <div class="knat-online-banner-main-text text-center">
+                                <div class="intro-transition hide">
+                                    <img class="knat-online-logo" src="{% static 'homepage/images/kenyanature.png' %}" alt="Kenya Nature Logo">
+                                </div>
+                                <div class="intro-transition hide">
+                                    <h1 class="banner-title">Kenya Nature</h1>
+                                    <hr class="knat-online-line-break">
+                                    <p id="website-description">This is a website designed to showcase the natural endowment, including forests and energy sources within Kenya.</p>
+                                    <a class="knat-button -online-learn-more-link" href="/features/features.html">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="knat-online-footer">
+        <nav>
+            <a href="{% url 'homepage:privacy' %}" target="_blank">Privacy</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="{% url 'homepage:contact' %}" target="_blank">Contact</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

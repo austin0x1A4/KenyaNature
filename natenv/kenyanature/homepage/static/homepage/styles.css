@@ -1,0 +1,133 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Reset some default styles */
+html, body, h1, h2, h3, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f8f8;
+}
+
+.page {
+    flex: 1;
+  }
+/* Page Layout */
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 800px;
+}
+
+/* Header */
+.knat-online-header {
+  height: 32px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: purple;
+  color: #fff;
+}
+
+.knat-online-header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.knat-online-header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Banner Section */
+.knat-online-banner {
+  padding: 80px 0;
+}
+
+.knat-online-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.banner-title {
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.knat-online-line-break {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+.knat-online-banner-main-text {
+    text-align: center;
+  }
+
+/* Buttons */
+.knat-button {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  align-items: center;
+
+}
+
+.knat-online-learn-more-link {
+  background-color: #efa616;
+  color: #fff;
+}
+
+.knat-button:hover {
+  background-color: #d49e00;
+}
+
+/* Footer */
+.knat-online-footer {
+    height: 32px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: rgb(49, 0, 128);
+    color: #fff;
+}
+
+.knat-online-footer nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+}
+
+.knat-online-footer nav a:hover {
+  text-decoration: underline;
+}
+
+#website-description {
+  text-align: center;
+  margin-bottom: 20px;
+}

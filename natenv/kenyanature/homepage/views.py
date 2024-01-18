@@ -44,3 +44,15 @@ def nature(request):
         'plot_url': plot_url
     }
     return render(request, "homepage/nature.html", context)
+
+def energy(request):
+    return render(request, "homepage/energy.html")
+
+def about(request):
+    return render(request, 'homepage/about.html')
+
+def privacy(request):
+    return render(request, 'homepage/privacy.html')
+
+def contact(request):
+    return render(request, 'homepage/contact.html')
